@@ -1,16 +1,65 @@
-# React + Vite
+# Stellar Mentor Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Stellar Mentor Marketplace is a React + Vite frontend for a Soroban smart contract on Stellar testnet. It demonstrates a complete mentorship workflow: mentor registration, mentorship requests, session completion, and mentor ratings.
 
-Currently, two official plugins are available:
+## What This Project Does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Connects a Freighter wallet for transaction signing.
+- Registers mentor profiles on-chain.
+- Lets mentees request mentorship and mentors accept them.
+- Completes sessions and stores session updates.
+- Rates mentors and reads mentor data from the contract.
 
-## React Compiler
+## Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![screenshot](screenshots/home.png)
+![screenshot](screenshots/mentorship-flow.png)
+![screenshot](screenshots/output-panel.png)
 
-## Expanding the ESLint configuration
+Note: The current files in screenshots/ are placeholders. Replace them with real screenshots from your running app.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deployed Contract
+
+- Contract ID: CBEM2XKBZ7B5GD7MHFVTO6W7Y5HWASEPK5BWFM4LKHUID5CO2AQV6XOJ
+- Stellar Expert: https://stellar.expert/explorer/testnet/contract/CBEM2XKBZ7B5GD7MHFVTO6W7Y5HWASEPK5BWFM4LKHUID5CO2AQV6XOJ
+
+## Setup Instructions
+
+### 1. Prerequisites
+
+- Node.js 18+
+- npm 9+
+- Freighter wallet extension (connected to Stellar testnet)
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the App
+
+```bash
+npm run dev
+```
+
+Open the local URL printed by Vite (usually http://localhost:5173).
+
+### 4. Connect Wallet and Interact
+
+- Click Connect Freighter in the app.
+- Use the Register tab to create a mentor profile.
+- Use Mentorship actions to request and complete sessions.
+- Use Rate and Browse to rate mentors and query contract data.
+
+### 5. Build for Production
+
+```bash
+npm run build
+```
+
+### 6. Preview Production Build
+
+```bash
+npm run preview
+```
