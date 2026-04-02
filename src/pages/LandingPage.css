@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+.landing-page-shell {
+    min-height: 100vh;
+    background:
+        linear-gradient(90deg, rgba(33, 118, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(33, 118, 255, 0.06) 1px, transparent 1px),
+        radial-gradient(circle at 15% 0%, rgba(244, 179, 37, 0.22), transparent 38%),
+        radial-gradient(circle at 85% 100%, rgba(22, 93, 194, 0.24), transparent 45%),
+        #040814;
+    background-size: 48px 48px, 48px 48px, auto, auto, auto;
+    color: #fff;
+}
+
+.landing-screen {
+    width: min(1240px, 95vw);
+    margin: 0 auto;
+    min-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(1rem, 3vw, 1.6rem) 0 1.3rem;
+}
+
+.landing-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.brand-mark {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #f7e8be;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.network-pill {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    border: 1px solid rgba(244, 179, 37, 0.35);
+    color: #ffd886;
+    border-radius: 999px;
+    padding: 0.34rem 0.72rem;
+    background: rgba(244, 179, 37, 0.08);
+}
+
+.nav-connect-btn {
+    border: 1px solid rgba(244, 179, 37, 0.46);
+    background: #f4b325;
+    color: #17100a;
+    border-radius: 10px;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.16s, background 0.16s;
+}
+
+.nav-connect-btn:hover {
+    background: #f7bf48;
+    transform: translateY(-1px);
+}
+
+.landing-content {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: clamp(1.5rem, 6vh, 4.8rem);
+}
+
+.landing-kicker {
+    display: inline-flex;
+    padding: 0.34rem 0.78rem;
+    border-radius: 999px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ffd886;
+    border: 1px solid rgba(244, 179, 37, 0.35);
+    background: rgba(244, 179, 37, 0.08);
+    margin-bottom: 0.95rem;
+}
+
+.landing-content h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(2.2rem, 6.8vw, 4.8rem);
+    line-height: 1.03;
+    letter-spacing: -0.02em;
+    color: #ecf1ff;
+}
+
+.landing-content h1 span {
+    color: #f4b325;
+}
+
+.landing-subtitle {
+    margin: 1.05rem auto 0;
+    max-width: 66ch;
+    color: #b8c7e6;
+    font-size: clamp(0.92rem, 1.4vw, 1.02rem);
+    line-height: 1.6;
+}
+
+.landing-cta-row {
+    margin-top: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.68rem;
+    flex-wrap: wrap;
+}
+
+.cta-primary,
+.cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    padding: 0.64rem 1rem;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.16s, box-shadow 0.16s, background 0.16s;
+}
+
+.cta-primary {
+    border: 1px solid rgba(244, 179, 37, 0.3);
+    background: #f4b325;
+    color: #17100a;
+}
+
+.cta-secondary {
+    border: 1px solid rgba(181, 201, 238, 0.3);
+    background: rgba(12, 23, 52, 0.5);
+    color: #d7e2fb;
+}
+
+.cta-primary:hover,
+.cta-secondary:hover {
+    transform: translateY(-1px);
+}
+
+.cta-primary:hover {
+    background: #f8c14b;
+    box-shadow: 0 10px 22px rgba(244, 179, 37, 0.28);
+}
+
+.cta-secondary:hover {
+    background: rgba(35, 57, 106, 0.7);
+}
+
+.landing-stats {
+    margin-top: 1.7rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(202, 216, 244, 0.16);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.6rem;
+}
+
+.landing-stats article {
+    display: grid;
+    gap: 0.24rem;
+}
+
+.landing-stats strong {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.22rem;
+    color: #f7bf48;
+}
+
+.landing-stats span {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: #8ea4d1;
+}
+
+@media (max-width: 980px) {
+    .landing-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 720px) {
+    .landing-screen {
+        width: min(1240px, 94vw);
+        min-height: auto;
+        padding-bottom: 1.2rem;
+    }
+
+    .landing-content {
+        padding-top: 1.25rem;
+    }
+
+    .landing-stats {
+        grid-template-columns: 1fr;
+    }
+}
