@@ -11,6 +11,7 @@
 
 - [Overview](#overview)
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [Architecture](#architecture)
 - [Quick Start](#quick-start)
 - [Tech Stack](#tech-stack)
@@ -55,6 +56,16 @@ The application features a professional two-page architecture: a premium landing
 - Secure wallet authentication via Freighter
 - Direct Soroban contract execution
 - Testnet deployment with public contract verification
+
+## Screenshots
+
+### Landing Page
+
+![Landing Page](public/landing-page.png)
+
+### App Workspace Page
+
+![App Workspace Page](public/app-page.png)
 
 ## Architecture
 
